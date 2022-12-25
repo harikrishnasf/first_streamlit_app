@@ -30,7 +30,7 @@ try:
  if not fruit_choice:
   streamlit.error("please select a fruit to get info")
  else:
-  back_from_function = get_fruityvice_data(fruit choice)
+  back_from_function = get_fruityvice_data(fruit_choice)
   streamlit.dataframe(back_from_function)
   streamlit.write('The user entered ', fruit_choice)
 #create the repeatable code block(called function)
