@@ -28,10 +28,10 @@ try:
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
  fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
  if not fruit_choice:
-   streamlit.error("please select a fruit to get info")
+  streamlit.error("please select a fruit to get info")
  else:
     
- streamlit.write('The user entered ', fruit_choice)
+  streamlit.write('The user entered ', fruit_choice)
 
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
 #fruityvice_response = requests.get('https://fruityvice.com/api/fruit/apple')
